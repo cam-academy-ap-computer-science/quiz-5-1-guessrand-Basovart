@@ -7,12 +7,12 @@ public class GuessRand {
 		Random r = new Random();
 		rand = r.nextInt(100)+1;
 		
-		while (success = false)  {
+		while (success == false)  {
 			int guess = 0;
 			Scanner console = new Scanner (System.in);
 			System.out.println("Your Guess: ");
 			guess = console.nextInt();
-			success =  compare(guess, rand);
+			success = compare(guess, rand);
 		}
 }
 	
